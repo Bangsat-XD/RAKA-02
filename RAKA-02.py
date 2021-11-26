@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #-*-coding:utf-8-*-
-# Made With 💝💖💝 By Ezema
+# Made With 💝💖💝 By Bangsat-XD
 # Thanks To Me
 # Thanks To All My Friends
 # Please Don't Recode, Thanks.
