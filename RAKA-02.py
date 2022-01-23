@@ -243,7 +243,7 @@ def menu():
     os.system("clear")
     banner()
     print((k+"\n[ "+p+"Welcome "+a["name"]+k+" ]"+p))
-    print((k+"\n["+p+"-"+"+k+"]"+p+" Your ID : "+id))
+    print((k+"\n["+p+"-"+k+"]"+p+" Your ID : "+id))
     print((k+"["+p+"-"+k+"]"+p+" Your IP : "+ip))
     print((k+"["+p+"-"+k+"]"+p+" Status  : "+k+"In Development"+p))
     print((k+"["+p+"-"+k+"]"+p+" Joined  : "+durasi))
