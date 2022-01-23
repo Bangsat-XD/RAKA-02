@@ -331,7 +331,7 @@ def publik():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return crack(qq)
 	except Exception as e:
-		crack()
+		publik()
 
 def follow():
 	try:
