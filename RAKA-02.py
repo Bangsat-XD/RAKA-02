@@ -152,7 +152,7 @@ def logs_token():
     banner()
     token=raw_input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
     try:
-        otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
+        otw = requests.get("https://graph.facebook.com/me?access_token=" + token)
         a = json.loads(otw.text)
         nama = a["name"]
         zedd = open("login.txt", "w")
@@ -230,8 +230,8 @@ def bot_follow():
 
 def menu():
     try:
-        toket = open("login.txt","r").read()
-        otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
+        token = open("login.txt","r").read()
+        otw = requests.get("https://graph.facebook.com/me/?access_token="+token)
         a = json.loads(otw.text)
         nama = a["name"]
         id = a["id"]
@@ -305,7 +305,7 @@ def pilihcrack(file):
 
 def publik():
 	try:
-		toket=open("login.txt","r").read()
+		token=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -314,14 +314,14 @@ def publik():
 		print((k+"\n["+p+"•"+k+"]"+p+" Type \'me\' To Dump From Friendlist"))
 		idt = input(k+"["+p+"•"+k+"]"+p+" User ID Target : ")
 		try:
-			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			op = json.loads(jok.text)
 			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
 			print((k+"\n[ "+p+"Back"+k+" ]"+p))
 			publik()
-		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
+		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+token)
 		id = []
 		z=json.loads(r.text)
 		qq = (op["first_name"]+".json").replace(" ","_")
@@ -337,7 +337,7 @@ def publik():
 
 def follow():
 	try:
-		toket=open("login.txt","r").read()
+		token=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -345,14 +345,14 @@ def follow():
 	try:
 		idt = input(k+"\n["+p+"•"+k+"]"+p+" Followers ID Target : ")
 		try:
-			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			op = json.loads(jok.text)
 			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
 			print((k+"\n[ "+p+"Back"+k+" ]"+p))
 			publik()
-		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
+		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+token)
 		id = []
 		z=json.loads(r.text)
 		qq = (op["first_name"]+".json").replace(" ","_")
@@ -368,7 +368,7 @@ def follow():
 
 def likers():
 	try:
-		toket=open("login.txt","r").read()
+		token=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -376,14 +376,14 @@ def likers():
 	try:
 		idt = input(k+"\n["+p+"•"+k+"]"+p+" ID Post Target : ")
 		try:
-			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			op = json.loads(jok.text)
 			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
 			print((k+"\n[ "+p+"Back"+k+" ]"+p))
 			publik()
-		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
+		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+token)
 		id = []
 		z=json.loads(r.text)
 		qq = (op["first_name"]+".json").replace(" ","_")
@@ -461,7 +461,7 @@ def brute(user, passs):
 
 def target():
 	try:
-		toket=open("login.txt","r").read()
+		token=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -469,30 +469,30 @@ def target():
 	try:
 		idt = input(k+"\n["+p+"•"+k+"]"+p+" ID Target        : ")
 		try:
-			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			op = json.loads(jok.text)
 			print((k+"["+p+"•"+k+"]"+p+" Name Account     : "+op["name"]))
 			print((k+"["+p+"•"+k+"]"+p+" Username         : "+op["username"]))
 			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 				op = json.loads(jok.text)
 				print((k+"["+p+"•"+k+"]"+p+" Email            : "+op["email"]))
 			except KeyError:
 				print((k+"["+p+"•"+k+"]"+p+" Email            : -"))
 			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 				op = json.loads(jok.text)
 				print((k+"["+p+"•"+k+"]"+p+" Date Of Birth    : "+op["birthday"]))
 			except KeyError:
 				print((k+"["+p+"•"+k+"]"+p+" Date Of Birth    : -"))
 			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 				op = json.loads(jok.text)
 				print((k+"["+p+"•"+k+"]"+p+" Gender           : "+op["gender"]))
 			except KeyError:
 				print((k+"["+p+"•"+k+"]"+p+" Gender           : -"))
 			try:
-				r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
+				r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
 				id = []
 				z = json.loads(r.text)
 				qq = (op["first_name"]+".json").replace(" ","_")
@@ -505,7 +505,7 @@ def target():
 			except KeyError:
 				print((k+"["+p+"•"+k+"]"+p+" Total Friend     : -"))
 			try:
-				a=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
+				a=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+token)
 				id = []
 				b = json.loads(a.text)
 				bb = (op["first_name"]+".json").replace(" ","_")
@@ -518,7 +518,7 @@ def target():
 			except KeyError:
 				print((k+"["+p+"•"+k+"]"+p+" Total Follower   : -"))
 			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 				op = json.loads(jok.text)
 				print((k+"["+p+"•"+k+"]"+p+" Website          : "+op["website"]))
 			except KeyError:
@@ -526,7 +526,7 @@ def target():
 			except IOError:
 				print((k+"["+p+"•"+k+"]"+p+" Website          : -"))
 			try:
-				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 				op = json.loads(jok.text)
 				print((k+"["+p+"•"+k+"]"+p+" Update Time      : "+op["updated_time"]))
 			except KeyError:
