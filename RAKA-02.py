@@ -258,25 +258,25 @@ def menu():
     choose_menu()
 
 def choose_menu():
-	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
-	if r=="":
+	r = raw_input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+	if r == "":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
-	elif r=="1":
+	elif r == "1":
 		publik()
-	elif r=="2":
+	elif r == "2":
 		follow()
-	elif r=="3":
+	elif r == "3":
 		likers()
-	elif r=="4":
+	elif r == "4":
 		random_numbers()
-	elif r=="5":
+	elif r == "5":
 		random_email()
-	elif r=="6":
+	elif r == "6":
 		target()
-	elif r=="7":
+	elif r == "7":
 		ress()
-	elif r=="0":
+	elif r == "0":
 		try:
 			print("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;97m Deleting Token Successful see you 😊")
 			os.remove("rm -rf login.txt")
