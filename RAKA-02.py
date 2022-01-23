@@ -234,7 +234,7 @@ def menu():
         nama = a["name"]
         id = a["id"]
     except Exception as e:
-        print((k+"["+p+"•"+k+"]"+p+" Error : %s"%e))
+        print((k+"["+p+"•"+k+"]"+p+" Error"))
         logs()
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
@@ -331,7 +331,7 @@ def publik():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
+		exit((k+"["+p+"!"+k+"]"+p+" Error"))
 
 def follow():
 	try:
@@ -393,7 +393,7 @@ def likers():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
+		exit((k+"["+p+"!"+k+"]"+p+" Error"))
 
 ### CRACK EMAIL & PHONE ###
 
