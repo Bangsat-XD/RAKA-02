@@ -278,11 +278,11 @@ def choose_menu():
 		ress()
 	elif r=="0":
 		try:
-			jalan(k+"\n["+p+"•"+k+"]"+p+" Thanks For Using My Script")
-			os.system("rm -rf login.txt")
-			exit()
+		jalan(k+"\n["+p+"•"+k+"]"+p+" Thanks For Using My Script")
+		os.system("rm -rf login.txt")
+		exit()
 		except Exception as e:
-			print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
+		print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
 	else:
 		print((k+"["+p+"!"+k+"]"+p+" Wrong Input"))
 		menu()	
