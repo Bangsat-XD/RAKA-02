@@ -331,7 +331,7 @@ def publik():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit((k+"["+p+"!"+k+"]"+p+" Error"))
+		exit()
 
 def follow():
 	try:
@@ -362,7 +362,7 @@ def follow():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
+		exit()
 
 def likers():
 	try:
@@ -393,7 +393,7 @@ def likers():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit((k+"["+p+"!"+k+"]"+p+" Error"))
+		exit()
 
 ### CRACK EMAIL & PHONE ###
 
