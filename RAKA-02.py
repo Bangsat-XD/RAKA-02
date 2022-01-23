@@ -139,6 +139,7 @@ def logs():
     logs()
   elif sek=="1":
     log_token()
+    methode()
   elif sek=="2":
     gen()
   elif sek=="0":
