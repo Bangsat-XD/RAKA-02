@@ -278,12 +278,14 @@ def choose_menu():
 		ress()
 	elif r == "0":
 		try:
-			print("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;97m Deleting Token Successful see you 😊")
-			os.remove("rm -rf login.txt")
+			jalan(k+"\n["+p+"+"+k+"]"+p+" Mantap Tod...")
+			os.system("rm -rf login.txt")
+			exit()
 		except Exception as e:
-			exit("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;91m Invalid File")
+			print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
 	else:
-		exit("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;91m Wrong Input")
+		print((k+"["+p+"!"+k+"]"+p+" Isi Yang Bener Kentod!!"))
+		menu()	
 
 def pilihcrack(file):
   print((k+"\n["+p+"1"+k+"]"+p+" Mbasic ("+h+"Recommended"+p+")"))
