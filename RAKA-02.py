@@ -255,9 +255,9 @@ def menu():
     print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
     print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
     print((k+"["+p+"0"+k+"]"+p+" Logout"))
-    choose_menu()
+    menu()
 
-def choose_menu():
+def menu():
 	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
