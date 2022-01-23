@@ -277,7 +277,7 @@ def choose_menu():
 	elif r=="7":
 		ress()
 	elif r=="0":
-		try:
+	try:
 		jalan(k+"\n["+p+"•"+k+"]"+p+" Thanks For Using My Script")
 		os.system("rm -rf login.txt")
 		exit()
