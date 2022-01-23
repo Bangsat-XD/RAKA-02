@@ -664,7 +664,7 @@ class crack:
 				else:continue
 					
 			self.ko+=1
-			print("\r\x1b[0;33mCrack %s/%s OK : %s CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
+			print "\r\x1b[0;33mCrack %s/%s OK : %s CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
 		except:
 			self.main(fl)
 
@@ -761,7 +761,7 @@ class crackttl:
 				else:continue
 					
 			self.ko+=1
-			print("\r Crack %s/%s OK : %s CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
+			print "\r Crack %s/%s OK : %s CP : %s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)), end=' ');sys.stdout.flush()
 		except:
 			self.main(fl)
 
