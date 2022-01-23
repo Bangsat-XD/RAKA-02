@@ -284,20 +284,20 @@ def choose_menu():
 		print((k+"["+p+"!"+k+"]"+p+" Isi Yang Bener Kentod!!"))
 		menu()	
 
-def pilihcrack(file):
+def crack():
   print((k+"\n["+p+"1"+k+"]"+p+" Mbasic ("+h+"Recommended"+p+")"))
   print((k+"["+p+"2"+k+"]"+p+" Mbasic + TTL"))
   krah=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
   if krah in[""]:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
-    pilihcrack(file)
+    crack()
   elif krah in["1","01"]:
-    crack(file)
+    crack()
   elif krah in["2","02"]:
-    crackttl(file)
+    crack()
   else:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
-    pilihcrack(file)
+    crack()
 
 ### DUMP ID ###
 
@@ -331,7 +331,7 @@ def publik():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit()
+		crack()
 
 def follow():
 	try:
@@ -362,7 +362,7 @@ def follow():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit()
+		crack()
 
 def likers():
 	try:
@@ -393,7 +393,7 @@ def likers():
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit()
+		crack()
 
 ### CRACK EMAIL & PHONE ###
 
