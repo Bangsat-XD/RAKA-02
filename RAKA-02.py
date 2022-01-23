@@ -254,7 +254,7 @@ def menu():
     print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
     print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
     print((k+"["+p+"0"+k+"]"+p+" Logout"))
-    menu()
+    choose_menu()
 
 def choose_menu():
 	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
