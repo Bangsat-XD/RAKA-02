@@ -280,7 +280,7 @@ def choose_menu():
 			os.system("rm -rf login.txt")
 			exit()
 		except Exception as e:
-			print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
+			print((k+"["+p+"!"+k+"]"+p+" Error"))
 	else:
 		print((k+"["+p+"!"+k+"]"+p+" Isi Yang Bener Kentod!!"))
 		menu()	
@@ -304,7 +304,7 @@ def pilihcrack(file):
 
 def publik():
 	try:
-		token=open("login.txt","r").read()
+		toket=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -336,7 +336,7 @@ def publik():
 
 def follow():
 	try:
-		token=open("login.txt","r").read()
+		toket=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -367,7 +367,7 @@ def follow():
 
 def likers():
 	try:
-		token=open("login.txt","r").read()
+		toket=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
 		os.system("rm -rf login.txt")
@@ -460,7 +460,7 @@ def brute(user, passs):
 
 def target():
 	try:
-		token=open("login.txt","r").read()
+		toket=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		os.system("rm -rf login.txt")
