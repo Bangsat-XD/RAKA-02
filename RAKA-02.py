@@ -133,15 +133,15 @@ def logs():
   print((k+"\n["+p+"1"+k+"]"+p+" Login With Token"))
   print((k+"["+p+"2"+k+"]"+p+" Login With Cookies"))
   print((k+"["+p+"0"+k+"]"+p+" Exit"))
-  sek=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
-  if sek=="":
+  sek = raw_input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+  if sek == "":
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
-  elif sek=="1":
+  elif sek == "1":
     logs_token()
-  elif sek=="2":
+  elif sek == "2":
     gen()
-  elif sek=="0":
+  elif sek == "0":
     exit()
   else:
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
