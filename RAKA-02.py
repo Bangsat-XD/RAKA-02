@@ -254,7 +254,7 @@ def menu():
     print((k+"["+p+"5"+k+"]"+p+" Crack By Email"))
     print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
     print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
-    print((k+"["+p+"0"+k+"]"+p+" Logout"))
+    print((k+"["+p+"0"+k+"]"+p+" Logout Remove Token"))
     choose_menu()
 
 def choose_menu():
@@ -277,15 +277,13 @@ def choose_menu():
 	elif r=="7":
 		ress()
 	elif r=="0":
-	     try:
-		jalan(k+"\n["+p+"•"+k+"]"+p+" Thanks For Using My Script")
-		os.system("rm -rf login.txt")
-		exit()
-	   except Exception as e:
-		print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
+		try:
+			print("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;97m Deleting Token Successful see you 😊")
+			os.remove("rm -rf login.txt")
+		except Exception as e:
+			exit("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;91m Invalid File")
 	else:
-		print((k+"["+p+"!"+k+"]"+p+" Wrong Input"))
-		menu()	
+		exit("\x1b[1;92m[\x1b[1;97m•\x1b[1;92m]\x1b[1;91m Wrong Input")
 
 def pilihcrack(file):
   print((k+"\n["+p+"1"+k+"]"+p+" Mbasic ("+h+"Recommended"+p+")"))
