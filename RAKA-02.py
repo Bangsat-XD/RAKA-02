@@ -11,7 +11,7 @@ from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
 from datetime import datetime
-current = datetime.now()
+web = datetime.datetime.now()
 
 p = "\x1b[0;37m" # putih
 m = "\x1b[0;31m" # merah
