@@ -138,8 +138,7 @@ def logs():
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
   elif sek=="1":
-    log_token()
-    methode()
+    logs_token()
   elif sek=="2":
     gen()
   elif sek=="0":
@@ -148,7 +147,7 @@ def logs():
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
 
-def log_token():
+def logs_token():
     os.system("clear")
     banner()
     toket = input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
