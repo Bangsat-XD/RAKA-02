@@ -329,7 +329,7 @@ def publik():
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
-		return pilihcrack(qq)
+		return crack(qq)
 	except Exception as e:
 		crack()
 
@@ -360,7 +360,7 @@ def follow():
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
-		return pilihcrack(qq)
+		return crack(qq)
 	except Exception as e:
 		crack()
 
@@ -391,7 +391,7 @@ def likers():
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
 		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
-		return pilihcrack(qq)
+		return crack(qq)
 	except Exception as e:
 		crack()
 
