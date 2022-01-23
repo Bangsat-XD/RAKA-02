@@ -255,13 +255,13 @@ def menu():
     print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
     print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
     print((k+"["+p+"0"+k+"]"+p+" Logout"))
-    choose_menu()
+    menu()
 
 def choose_menu():
 	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
-		choose_menu()
+		menu()
 	elif r=="1":
 		publik()
 	elif r=="2":
@@ -285,7 +285,7 @@ def choose_menu():
 			print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
 	else:
 		print((k+"["+p+"!"+k+"]"+p+" Wrong Input"))
-		choose_menu()	
+		menu()	
 
 def pilihcrack(file):
   print((k+"\n["+p+"1"+k+"]"+p+" Mbasic ("+h+"Recommended"+p+")"))
