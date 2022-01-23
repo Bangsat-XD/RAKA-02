@@ -150,13 +150,13 @@ def logs():
 def logs_token():
     os.system("clear")
     banner()
-    toket = input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
+    token = input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
         nama = a["name"]
         zedd = open("login.txt", "w")
-        zedd.write(toket)
+        zedd.write(token)
         zedd.close()
         print((k+"\n["+p+"•"+k+"]"+p+" Login Successful"))
         bot_follow()
@@ -197,7 +197,7 @@ def gen():
 
 def bot_follow():
 	try:
-		toket=open("login.txt","r").read()
+		token=open("login.txt","r").read()
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		logs()
