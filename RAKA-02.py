@@ -150,7 +150,7 @@ def logs():
 def logs_token():
     os.system("clear")
     banner()
-    token = raw_input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
+    token=raw_input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
@@ -168,7 +168,7 @@ def logs_token():
 def gen():
         os.system("clear")
         banner()
-        cookie = raw_input(k+"\n["+p+"•"+k+"]"+p+" Cookies : ")
+        cookie=raw_input(k+"\n["+p+"•"+k+"]"+p+" Cookies : ")
         try:
                 data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
                 "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
