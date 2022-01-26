@@ -537,7 +537,7 @@ def target():
 			input(k+"\n[ "+p+"Back"+k+" ]"+p)
 			menu()
 	except Exception as e:
-		exit(k+"["+p+"•"+k+"]"+p+" Error : %s"%e)
+		exit(k+"["+p+"•"+k+"]"+p+" Error : %s"%)
 
 ### PASSWORD ###
 
